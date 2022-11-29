@@ -12,7 +12,7 @@ At this time, only primary, transportation-related events can be submitted using
 
 See also our [GetManifests](https://github.com/MFSTech/GetManifests) documentation for additional context.
 
-If you have any questions, please email EDI@MFSCorporate.com.
+If you have any questions, please email PFD.EDI@PilotDelivers.com.
 
 Example Files
 -------------
