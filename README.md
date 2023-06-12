@@ -6,7 +6,7 @@ EDI (API) Documentation for the Standard, XML-Based, Vendor Status HTTP Endpoint
 Overview
 ----------
 
-Manna Freight Systems, Inc. can receive specially-formatted XML documents containing freight status information from our suppliers. This information can be transferred to our HTTP endpoint or put into a file which can be transferred via FTP-- either downloaded by us from an FTP server hosted by the supplier or uploaded to an FTP server hosted by us.
+Pilot Freight Services can receive specially-formatted XML documents containing freight status information from our suppliers. This information can be transferred to our HTTP endpoint or put into a file which can be transferred via FTP-- either downloaded by us from an FTP server hosted by the supplier or uploaded to an FTP server hosted by us.
 
 At this time, only primary, transportation-related events can be submitted using this system. Examples include freight pickup, staging for delivery, and delivery. Calls made to recipients for scheduling-- and the agreed-upon schedule-- cannot be transmitted using this service at this time. Those improvements are on the road map.
 
@@ -286,6 +286,6 @@ However, responses are *not* supported using FTP at this time. Therefore, your s
 Miscellany
 ----------
 
-* For the purposes of this document, "you" are the technical representative for the freight movement supplier (e.g. trucking company) and "we" are Manna Freight Systems, Inc., who is contracting with the supplier for them to perform services for us.
+* For the purposes of this document, "you" are the technical representative for the freight movement supplier (e.g. trucking company) and "we" are Pilot Freight Services, who is contracting with the supplier for them to perform services for us.
 * A single transmission can contain multiple status submissions, but multiple statuses for the same manifest cannot be combined in the same status submission. Multiple statuses for the same manifest must be separated into multiple status submissions, with the manifest-level information repeated in each status submission.
 * Many of our customers ask us to perform "advance exchange" or "whole unit exchange" services, which involve us delivering a replacement product to an end user and recovering an existing product from them at the same time. We then return that existing product to our customer. We break this service into two shipments-- one from our customer's warehouse to the end user and another from that end user back to the customer's warehouse. Because we treat those shipments separately, what might be a single "job" from our supplier's perspective (dropping off the new and bring back the original) are actually two manifests from our perspective. Therefore, the supplier would have to provide both a Proof of Delivery status on the outbound (Delivery) manifest and a Proof of Pickup status on the return (Pickup) manifest.
